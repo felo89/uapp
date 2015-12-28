@@ -6,14 +6,13 @@
     .module('uapp.dashboard')
     .config(configDashboard);
 
-  configDashboard.$inject = ['$stateProvider','navbarConfig'];
+  configDashboard.$inject = ['$stateProvider'];
 
-  function configDashboard($stateProvider, navbarConfig) {
+  function configDashboard($stateProvider) {
     $stateProvider
       .state('dashboard', {
         url: '/dashboard',
         views: {
-          'navbar': navbarConfig,
           'page':{templateUrl: 'dashboard/dashboard.html', controller: 'DashboardCtrl', controllerAs: 'dashboard'}
         }
       });

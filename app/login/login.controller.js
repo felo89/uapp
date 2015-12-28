@@ -5,8 +5,13 @@
     .module('uapp.login')
     .controller('LoginCtrl', LoginCtrl);
 
-  function LoginCtrl(){
+  LoginCtrl.$inject = ['$state'];
+
+  function LoginCtrl($state){
     var vm = this;
-    vm.title = "Login";
+
+    vm.login = function(){
+      $state.go('dashboard');
+    }
   };
 })();
