@@ -6,7 +6,6 @@
     .controller('LoginCtrl', LoginCtrl);
 
   function LoginCtrl(){
-    console.log('login',this);
     var vm = this;
     vm.title = "Login";
   };
