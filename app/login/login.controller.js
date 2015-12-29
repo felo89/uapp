@@ -1,5 +1,5 @@
 (function(){
-'use strict';
+  'use strict';
 
   angular
     .module('uapp.login')
@@ -11,7 +11,7 @@
     var vm = this;
 
     vm.login = function(){
-      $state.go('dashboard');
+      $state.go('app.dashboard');
     }
   };
 })();

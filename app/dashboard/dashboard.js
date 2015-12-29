@@ -1,5 +1,4 @@
 (function () {
-
   'use strict';
 
   angular
@@ -10,7 +9,7 @@
 
   function configDashboard($stateProvider) {
     $stateProvider
-      .state('dashboard', {
+      .state('app.dashboard', {
         url: '/dashboard',
         views: {
           'page':{templateUrl: 'dashboard/dashboard.html', controller: 'DashboardCtrl', controllerAs: 'dashboard'}

@@ -1,5 +1,4 @@
 (function () {
-
   'use strict';
 
   angular
@@ -12,9 +11,12 @@
     $stateProvider
       .state('login', {
         url: '/login',
-        views: {
-          'page':{templateUrl: 'login/login.html', controller: 'LoginCtrl', controllerAs: 'login'}
-        }
+        // views: {
+        //   'page':{templateUrl: 'login/login.html', controller: 'LoginCtrl', controllerAs: 'login'}
+        // }
+        templateUrl: 'login/login.html',
+        controller: 'LoginCtrl',
+        controllerAs: 'login'
       });
   };
 })();
