@@ -1,8 +1,10 @@
 <ion-view view-title="score">
   <ion-content class="top-title">
     <ul class="list">
-      <li class="item" ng-repeat="grade in score.grades">
-        {{grade.code}} - {{grade.name}}
+      <li class="item item-icon-right" ng-repeat="grade in score.grades" ng-click="goGradeDetail('{{grade.code}}')">
+        <h2>{{grade.name}}</h2>
+        <p>{{grade.code}}</p>
+        <i class="icon ion-ios-arrow-forward"></i>
       </li>
     </ul>
   </ion-content>
