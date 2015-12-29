@@ -7,6 +7,6 @@
 
   function DashboardCtrl(){
     var vm = this;
-    vm.title = "Dashboard";
+    vm.title = "Dashboard"
   };
 })();
