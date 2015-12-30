@@ -12,6 +12,6 @@
 
     vm.login = function(){
       $state.go('app.dashboard');
-    }
+    };
   };
 })();

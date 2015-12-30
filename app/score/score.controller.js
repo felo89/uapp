@@ -6,6 +6,7 @@
     .controller('ScoreCtrl', ScoreCtrl);
 
   ScoreCtrl.$inject = ['$state'];
+  
   function ScoreCtrl($state){
     var vm = this;
     vm.grades = [
@@ -17,6 +18,6 @@
 
     vm.goGradeDetail = function(codeGrade){
       $state.go('app.score.grade', {codeGrade: codeGrade});
-    }
+    };
   };
 })();
