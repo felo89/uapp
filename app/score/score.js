@@ -14,12 +14,6 @@
         views: {
           'page':{templateUrl: 'score/score.html', controller: 'ScoreCtrl', controllerAs: 'score'}
         }
-      })
-      .state('app.score.grade', {
-        url: '/grade',
-        views: {
-          'page':{templateUrl: 'score/score.grade.html', controller: 'GradeCtrl', controllerAs: 'grade'}
-        }
       });
   };
 })();

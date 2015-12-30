@@ -17,7 +17,7 @@
     ];
 
     vm.goGradeDetail = function(codeGrade){
-      $state.go('app.score.grade', {codeGrade: codeGrade});
+      $state.go('app.grade', {codeGrade: codeGrade});
     };
   };
 })();

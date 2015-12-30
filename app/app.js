@@ -6,9 +6,10 @@
   angular.module('uapp.login',[]);
   angular.module('uapp.dashboard',[]);
   angular.module('uapp.score',[]);
+  angular.module('uapp.grade',[]);
 
   angular
-    .module('uapp', ['ionic','ui.router','uapp.sideBar','uapp.login','uapp.dashboard','uapp.score'])
+    .module('uapp', ['ionic','ui.router','uapp.sideBar','uapp.login','uapp.dashboard','uapp.score','uapp.grade'])
     .config(config);
 
   config.$inject = ['$urlRouterProvider'];
