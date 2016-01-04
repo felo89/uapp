@@ -7,9 +7,10 @@
   angular.module('uapp.dashboard',[]);
   angular.module('uapp.score',[]);
   angular.module('uapp.grade',[]);
+  angular.module('uapp.assistance',[]);
 
   angular
-    .module('uapp', ['ionic','ui.router','uapp.sideBar','uapp.login','uapp.dashboard','uapp.score','uapp.grade'])
+    .module('uapp', ['ionic','ui.router','uapp.sideBar','uapp.login','uapp.dashboard','uapp.score','uapp.grade','uapp.assistance'])
     .config(config);
 
   config.$inject = ['$urlRouterProvider'];
